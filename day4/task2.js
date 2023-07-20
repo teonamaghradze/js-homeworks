@@ -21,6 +21,5 @@ function reverse(arr) {
 }
 
 console.log(reverse([1, 8, 5, 2, 3, 10]));
-
 console.log(reverse("dsadsa"));
 console.log(reverse([]));
