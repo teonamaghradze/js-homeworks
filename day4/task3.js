@@ -19,11 +19,9 @@ function rotate(arr, num, order = "right") {
 
     const rotations = num % arr.length;
 
-    if (order === "left") {
-      return arr.slice(rotations).concat(arr.slice(0, rotations));
-    } else {
-      return arr.slice(-rotations).concat(arr.slice(0, arr.length - rotations));
-    }
+    return order === "left"
+      ? arr.slice(rotations).concat(arr.slice(0, rotations))
+      : arr.slice(-rotations).concat(arr.slice(0, arr.length - rotations));
   } catch (err) {
     console.error(err);
   }
@@ -34,5 +32,5 @@ console.log(rotate(arr, 1, "left")); // result: [2, 3, 1]
 console.log(rotate(arr, 1)); // result: [3, 1, 2]
 console.log(rotate(arr, 2)); // result: [2, 3, 1]
 
-const arr1 = [2, 3, 4];
-console.log(rotate(arr1, "dsd"));
+console.log(rotate([], 2));
+console.log(rotate([1, 3], "dss"));
