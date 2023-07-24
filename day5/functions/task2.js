@@ -29,9 +29,7 @@ function mix(...funcs) {
 
 console.log(
   mix(
-    () => {
-      return 0;
-    },
+    5,
     (prev) => {
       return prev + 1;
     },
@@ -43,13 +41,3 @@ console.log(
     }
   )
 );
-// Function returns
-// {
-//     errors: [{
-//             name: 'RangeError',
-//             message: 'Range is wrong',
-//             stack: '... stack of your error ...',
-//             level: 2
-//     }],
-//     value: 3
-// }

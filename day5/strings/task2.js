@@ -1,14 +1,18 @@
 "use strict";
 
 function reverseCase(sentence) {
-  if (typeof sentence !== "string") {
-    throw new Error("parameter must be only string");
-  } else {
-    let reversedArr = sentence.split("").map((el) => {
-      return el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase();
-    });
+  try {
+    if (typeof sentence !== "string") {
+      throw new Error("parameter must be only string");
+    } else {
+      let reversedArr = sentence.split("").map((el) => {
+        return el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase();
+      });
 
-    return reversedArr.join("");
+      return reversedArr.join("");
+    }
+  } catch (err) {
+    console.error(err);
   }
 }
 
