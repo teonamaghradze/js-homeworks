@@ -3,7 +3,7 @@
 function searchWord(sentence, word) {
   try {
     if (typeof sentence !== "string" || typeof word !== "string") {
-      throw new Error("Both parameters must be strings.");
+      throw new Error("Parameters must be strings.");
     }
 
     let sum = 0;
