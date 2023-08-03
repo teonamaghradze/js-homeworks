@@ -18,7 +18,7 @@ function CoffeeMachine(power) {
 
   this.stop = function () {
     clearTimeout(timerId);
-    return "Coffee stopped boiling";
+    // return "Coffee stopped boiling";
   };
 }
 
