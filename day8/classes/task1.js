@@ -16,8 +16,8 @@ class Validator {
   }
 
   isPhone(phoneNum) {
-    const validPhone =
-      /^\+?\d{1,4}\s?\(?\d{1,4}\)?\s?\d{1,4}-?\d{1,4}-?\d{1,4}$/;
+    //+375 (29) 817-68-92
+    const validPhone = /^\+375 \(\d{2}\) \d{3}-\d{2}-\d{2}$/;
     return validPhone.test(phoneNum);
   }
 }
