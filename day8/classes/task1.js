@@ -24,7 +24,7 @@ class Validator {
 
 let validator = new Validator();
 
-console.log(validator.isEmail("jshtml@mail.ru"));
+console.log(validator.isEmail("jshtml@gmail.com"));
 console.log(validator.isDomain("jshtml.net"));
 console.log(validator.isDate("12.05.2020"));
 console.log(validator.isPhone("+375 (29) 817-68-92")); // it can be format of your country
